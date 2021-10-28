@@ -8,4 +8,9 @@ app = Bottle()
 def hello():
     return "Hello World!"
 
-run(app, host='localhost', port=8080)
+@app.route('/')
+def main_page():
+    return "main page"
+
+if __name__ == '__main__':
+    run(app, host='localhost', port=8080)
