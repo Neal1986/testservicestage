@@ -8,6 +8,10 @@ app = Bottle()
 def hello():
     return "Hello World!"
 
+@app.route('/test')
+def hello():
+    return "Test!"
+
 @app.route('/')
 def main_page():
     return "main page"
