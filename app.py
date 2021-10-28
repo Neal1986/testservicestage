@@ -10,7 +10,7 @@ def hello():
 
 @app.route('/test')
 def hello():
-    return "Test!"
+    return "Test"
 
 @app.route('/')
 def main_page():
